@@ -10,6 +10,8 @@
 
 function countWins(winnerList, country) {
     // your awesome code here
+    const count = winnerList.reduce( (total, winner) => winner.country === country ? total + 1 : total, 0);
+    return count;
 }
 
 const winnerList1 = [

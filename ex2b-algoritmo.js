@@ -10,6 +10,7 @@
  * @returns {array} Devuelve un array de numbers 
  */
 function toNumberArray(stringarray) {
+    return stringarray.map(str => Number(str));
 }
 
 // Caso de prueba 1: Números enteros en forma de strings
